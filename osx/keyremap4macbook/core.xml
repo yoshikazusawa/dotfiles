@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Double Command_R to tmux prefix</name>
+        <identifier>private.term.tmux.prefixkey</identifier>
+        <only>TERMINAL</only>
+        <autogen>
+            --DoublePressModifier-- 
+            KeyCode::COMMAND_R, KeyCode::COMMAND_R, 
+            KeyCode::B, ModifierFlag::CONTROL_L</autogen>
+    </item>
+</root>

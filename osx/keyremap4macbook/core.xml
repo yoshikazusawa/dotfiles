@@ -9,4 +9,14 @@
             KeyCode::COMMAND_R, KeyCode::COMMAND_R, 
             KeyCode::B, ModifierFlag::CONTROL_L</autogen>
     </item>
+    <item>
+        <name>ModifierFlag::EXTRA1+EDSF to Up/Down/Left/Right</name>
+        <identifier>private.term.diamond_cursor.extra_edsf</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ ModifierFlag::COMMAND_R, KeyCode::VK_MODIFIER_EXTRA1</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA1, KeyCode::CURSOR_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA1, KeyCode::CURSOR_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
 </root>

@@ -25,10 +25,20 @@
         <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
     </item>
     <item>
+        <name>EISUU to ModifierFlag::Extra1</name>
+        <appendix>(+ When you type EISUU only, send ESCAPE)</appendix>
+        <identifier>private.term.jis_eisuu_to_modifierflag_extra1</identifier>
+        <only>TERMINAL</only>
+        <autogen>
+            __KeyOverlaidModifier__ 
+            KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, 
+            KeyCode::ESCAPE
+        </autogen>
+    </item>
+    <item>
         <name>tmux window and pane</name>
         <identifier>private.term.tmux.window_and_pane</identifier>
         <only>TERMINAL</only>
-        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::ESCAPE</autogen>
         <autogen>
             __KeyToKey__
             KeyCode::C, ModifierFlag::EXTRA1, 

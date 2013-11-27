@@ -101,12 +101,12 @@
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::U, ModifierFlag::EXTRA1, 
+            KeyCode::N, ModifierFlag::EXTRA1, 
             KeyCode::G, KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::O, ModifierFlag::EXTRA1, 
+            KeyCode::M, ModifierFlag::EXTRA1, 
             KeyCode::G, KeyCode::T
         </autogen>
     </item>

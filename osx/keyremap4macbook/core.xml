@@ -10,6 +10,11 @@
             KeyCode::B, ModifierFlag::CONTROL_L</autogen>
     </item>
     <item>
+        <name>Control_L+Space to KANA/EISUU (toggle)</name>
+        <identifier>private.jis_ctrlspace2toggle_eisuu_kana</identifier>
+        <autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::CONTROL_L, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+    </item>
+    <item>
         <name>ModifierFlag::EXTRA1+EDSF to Up/Down/Left/Right</name>
         <identifier>private.term.diamond_cursor.extra_edsf</identifier>
         <only>TERMINAL</only>
@@ -19,4 +24,5 @@
         <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
         <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
     </item>
+
 </root>

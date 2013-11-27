@@ -75,5 +75,40 @@
             KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::O
         </autogen>
     </item>
+    <item>
+        <name>vim window and tab</name>
+        <identifier>private.term.vim.window_and_tab</identifier>
+        <only>TERMINAL</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::J, ModifierFlag::EXTRA1, 
+            KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L,  KeyCode::J
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::K, ModifierFlag::EXTRA1, 
+            KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L, KeyCode::K
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, ModifierFlag::EXTRA1, 
+            KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L,  KeyCode::H
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::L, ModifierFlag::EXTRA1, 
+            KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L, KeyCode::L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::U, ModifierFlag::EXTRA1, 
+            KeyCode::G, KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::O, ModifierFlag::EXTRA1, 
+            KeyCode::G, KeyCode::T
+        </autogen>
+    </item>
 
 </root>

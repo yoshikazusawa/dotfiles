@@ -24,5 +24,46 @@
         <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
         <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
     </item>
+    <item>
+        <name>tmux window and pane</name>
+        <identifier>private.term.tmux.window_and_pane</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::ESCAPE</autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::C, ModifierFlag::EXTRA1, 
+            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::C
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::R, ModifierFlag::EXTRA1, 
+            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::N
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::W, ModifierFlag::EXTRA1, 
+            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::P
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::A, ModifierFlag::EXTRA1, 
+            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::COMMA
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::KEY_1, ModifierFlag::EXTRA1, 
+            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::KEY_0
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::S, ModifierFlag::EXTRA1, 
+            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::O
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F, ModifierFlag::EXTRA1, 
+            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::O
+        </autogen>
+    </item>
 
 </root>

@@ -35,6 +35,10 @@
             KeyCode::ESCAPE
         </autogen>
     </item>
+    <replacementdef>
+        <replacementname>KEYCODE_TMUX</replacementname>
+        <replacementvalue>KeyCode::B, ModifierFlag::CONTROL_L</replacementvalue>
+    </replacementdef>
     <item>
         <name>tmux window and pane</name>
         <identifier>private.term.tmux.window_and_pane</identifier>
@@ -42,37 +46,37 @@
         <autogen>
             __KeyToKey__
             KeyCode::C, ModifierFlag::EXTRA1, 
-            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::C
+            {{ KEYCODE_TMUX }}, KeyCode::C
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::R, ModifierFlag::EXTRA1, 
-            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::N
+            {{ KEYCODE_TMUX }}, KeyCode::N
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::W, ModifierFlag::EXTRA1, 
-            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::P
+            {{ KEYCODE_TMUX }}, KeyCode::P
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::A, ModifierFlag::EXTRA1, 
-            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::COMMA
+            {{ KEYCODE_TMUX }}, KeyCode::COMMA
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::KEY_1, ModifierFlag::EXTRA1, 
-            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::KEY_0
+            {{ KEYCODE_TMUX }}, KeyCode::KEY_0
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::S, ModifierFlag::EXTRA1, 
-            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::O
+            {{ KEYCODE_TMUX }}, KeyCode::O
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::F, ModifierFlag::EXTRA1, 
-            KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::O
+            {{ KEYCODE_TMUX }}, KeyCode::O
         </autogen>
     </item>
     <replacementdef>

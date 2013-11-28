@@ -75,6 +75,10 @@
             KeyCode::B, ModifierFlag::CONTROL_L, KeyCode::O
         </autogen>
     </item>
+    <replacementdef>
+        <replacementname>KEYCODE_VIM_WINDOW</replacementname>
+        <replacementvalue>KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L</replacementvalue>
+    </replacementdef>
     <item>
         <name>vim window and tab</name>
         <identifier>private.term.vim.window_and_tab</identifier>
@@ -82,22 +86,22 @@
         <autogen>
             __KeyToKey__
             KeyCode::J, ModifierFlag::EXTRA1, 
-            KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L,  KeyCode::J
+            {{ KEYCODE_VIM_WINDOW }}, KeyCode::J
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::K, ModifierFlag::EXTRA1, 
-            KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L, KeyCode::K
+            {{ KEYCODE_VIM_WINDOW }}, KeyCode::K
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::H, ModifierFlag::EXTRA1, 
-            KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L,  KeyCode::H
+            {{ KEYCODE_VIM_WINDOW }}, KeyCode::H
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::L, ModifierFlag::EXTRA1, 
-            KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L, KeyCode::L
+            {{ KEYCODE_VIM_WINDOW }}, KeyCode::L
         </autogen>
         <autogen>
             __KeyToKey__

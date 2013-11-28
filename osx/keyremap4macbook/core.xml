@@ -35,6 +35,17 @@
             KeyCode::ESCAPE
         </autogen>
     </item>
+    <item>
+        <name>KANA to ModifierFlag::Extra2</name>
+        <appendix>(+ When you type KANA only, send RETURN)</appendix>
+        <identifier>private.term.jis_kana_to_modifierflag_extra2</identifier>
+        <only>TERMINAL</only>
+        <autogen>
+            __KeyOverlaidModifier__ 
+            KeyCode::JIS_KANA, KeyCode::VK_MODIFIER_EXTRA2, 
+            KeyCode::RETURN
+        </autogen>
+    </item>
     <replacementdef>
         <replacementname>KEYCODE_TMUX</replacementname>
         <replacementvalue>KeyCode::B, ModifierFlag::CONTROL_L</replacementvalue>

@@ -1,0 +1,16 @@
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neocomplcache'
+
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'The-NERD-tree'
+NeoBundle 'The-NERD-Commenter'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'vim-jp/vimdoc-ja'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle "sudar/vim-arduino-syntax"
+NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'surround.vim'

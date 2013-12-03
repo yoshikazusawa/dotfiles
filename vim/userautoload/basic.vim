@@ -24,3 +24,10 @@ set showmatch
 
 " 保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//e
+
+helptags $HOME/.vim/bundle/vimdoc-ja/doc
+set helplang=ja,en
+set statusline=%F%m%r%h%w\%=[TYPE=%Y]\[FORMAT=%{&ff}]\[ENC=%{&fileencoding}]\[LOW=%l/%L]
+
+set nu
+set hlsearch

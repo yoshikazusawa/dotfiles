@@ -1,0 +1,42 @@
+########
+# general
+########
+
+# git gcは走らせないようにする
+bind generic G none
+# dateの表示はデフォルト固定でview単位でDを使えるようにする
+bind generic D none
+
+
+########
+# main view
+########
+
+bind main R !git pull --rebase
+bind main V !?git revert %(commit)
+bind main g move-first-line
+bind main G move-last-line
+bind main C !?git checkout %(commit)
+bind main z toggle-rev-graph
+
+########
+# diff view
+########
+bind diff g move-first-line
+bind diff G move-last-line
+
+########
+# status view
+########
+
+bind status a !git add .
+
+
+########
+# branch view
+########
+
+bind branch n !git checkout -b %(prompt) %(branch)
+bind branch D !?git branch -D %(branch)
+
+

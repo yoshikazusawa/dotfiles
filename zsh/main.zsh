@@ -28,7 +28,6 @@ export PATH=~/.rbenv/shims:~/bin:~/nvm/v0.8.25/bin:/sbin:/usr/local/bin:/usr/bin
 source ~/nvm/nvm.sh
 nvm use v0.8.25
 
-# perlbrew
 source ~/perl5/perlbrew/etc/bashrc
 
 alias ki='tree -CAF'
@@ -37,3 +36,46 @@ alias rm='rm -i'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# utility aliases
+alias la='ls -al'
+alias ll='ls -l'
+alias l='ls'
+alias rm='rm -i'
+alias mv='mv -i'
+alias gst='git status'
+alias gdc='git diff --cached'
+alias hg='history -E 2 | grep '
+alias -g G=' | grep '
+alias -g GV=' | grep -v '
+alias -g L=' | lv '
+alias -g T=' | tail '
+alias -g V="| vim -R -"
+alias ki='tree -CA'
+alias ack="ack -i \--pager='less \-R'"
+alias ackjs='ack -t=js'
+alias ag="ag -C 1 --pager='less \-R'"
+alias findname='find . -name'
+
+# 補完候補が複数ある時に、一覧表示
+# 補完キー（Tab, Ctrl+I) を連打するだけで順に補完候補を自動で補完
+setopt auto_list
+
+# ヒストリの設定
+HISTFILE=~/.histfile
+HISTSIZE=100000
+SAVEHIST=100000
+
+setopt APPEND_HISTORY
+setopt HIST_NO_STORE
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_REDUCE_BLANKS
+setopt HIST_IGNORE_SPACE
+
+## never ever beep ever
+setopt NO_BEEP
+
+# ==== Commands ====
+setopt correct
+setopt list_packed
+setopt extendedglob

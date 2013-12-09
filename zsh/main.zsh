@@ -28,7 +28,6 @@ export PATH=~/.rbenv/shims:~/bin:~/nvm/v0.8.25/bin:/sbin:/usr/local/bin:/usr/bin
 source ~/nvm/nvm.sh
 nvm use v0.8.25
 
-# perlbrew
 source ~/perl5/perlbrew/etc/bashrc
 
 alias ki='tree -CAF'

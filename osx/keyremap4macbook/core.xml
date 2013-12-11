@@ -48,7 +48,7 @@
     </item>
     <replacementdef>
         <replacementname>KEYCODE_TMUX</replacementname>
-        <replacementvalue>KeyCode::B, ModifierFlag::CONTROL_L</replacementvalue>
+        <replacementvalue>KeyCode::B, VK_CONTROL</replacementvalue>
     </replacementdef>
     <item>
         <name>tmux window and pane</name>
@@ -92,7 +92,8 @@
     </item>
     <replacementdef>
         <replacementname>KEYCODE_VIM_WINDOW</replacementname>
-        <replacementvalue>KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L</replacementvalue>
+	<!-- FIXME: ctrl-a means increment number.. -->
+        <replacementvalue>KeyCode::A, VK_CONTROL, KeyCode::W, VK_CONTROL</replacementvalue>
     </replacementdef>
     <item>
         <name>vim window and tab</name>

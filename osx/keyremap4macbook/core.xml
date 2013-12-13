@@ -28,7 +28,6 @@
         <name>EISUU to ModifierFlag::Extra1</name>
         <appendix>(+ When you type EISUU only, send ESCAPE)</appendix>
         <identifier>private.term.jis_eisuu_to_modifierflag_extra1</identifier>
-        <only>TERMINAL</only>
         <autogen>
             __KeyOverlaidModifier__ 
             KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, 
@@ -128,6 +127,31 @@
             __KeyToKey__
             KeyCode::M, ModifierFlag::EXTRA1, 
             KeyCode::G, KeyCode::T
+        </autogen>
+    </item>
+    <item>
+        <name>chrome tab moves</name>
+        <identifier>private.chrome.tab.move</identifier>
+        <only>GOOGLE_CHROME</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::S, ModifierFlag::EXTRA1, 
+            KeyCode::TAB, ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F, ModifierFlag::EXTRA1, 
+            KeyCode::TAB, ModifierFlag::CONTROL_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::E, ModifierFlag::EXTRA1, 
+            KeyCode::CURSOR_UP
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::D, ModifierFlag::EXTRA1, 
+            KeyCode::CURSOR_DOWN
         </autogen>
     </item>
 

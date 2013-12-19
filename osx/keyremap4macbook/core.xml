@@ -91,7 +91,7 @@
     </item>
     <replacementdef>
         <replacementname>KEYCODE_VIM_WINDOW</replacementname>
-        <replacementvalue>KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::CONTROL_L</replacementvalue>
+        <replacementvalue>KeyCode::W, ModifierFlag::CONTROL_L</replacementvalue>
     </replacementdef>
     <item>
         <name>vim window and tab</name>

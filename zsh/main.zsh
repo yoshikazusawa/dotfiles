@@ -37,6 +37,7 @@ alias rm='rm -i'
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # utility aliases
+# TODO: alias.zshと重複しているのでsourceで取り込む
 alias la='ls -al'
 alias ll='ls -l'
 alias l='ls'

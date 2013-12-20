@@ -5,8 +5,8 @@
         <identifier>private.term.tmux.prefixkey</identifier>
         <only>TERMINAL</only>
         <autogen>
-            --DoublePressModifier-- 
-            KeyCode::COMMAND_R, KeyCode::COMMAND_R, 
+            --DoublePressModifier--
+            KeyCode::COMMAND_R, KeyCode::COMMAND_R,
             KeyCode::B, ModifierFlag::CONTROL_L</autogen>
     </item>
     <item>
@@ -29,8 +29,8 @@
         <appendix>(+ When you type EISUU only, send ESCAPE)</appendix>
         <identifier>private.term.jis_eisuu_to_modifierflag_extra1</identifier>
         <autogen>
-            __KeyOverlaidModifier__ 
-            KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, 
+            __KeyOverlaidModifier__
+            KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1,
             KeyCode::ESCAPE
         </autogen>
     </item>
@@ -40,8 +40,8 @@
         <identifier>private.term.jis_kana_to_modifierflag_extra2</identifier>
         <only>TERMINAL</only>
         <autogen>
-            __KeyOverlaidModifier__ 
-            KeyCode::JIS_KANA, KeyCode::VK_MODIFIER_EXTRA2, 
+            __KeyOverlaidModifier__
+            KeyCode::JIS_KANA, KeyCode::VK_MODIFIER_EXTRA2,
             KeyCode::RETURN
         </autogen>
     </item>
@@ -55,44 +55,43 @@
         <only>TERMINAL</only>
         <autogen>
             __KeyToKey__
-            KeyCode::C, ModifierFlag::EXTRA1, 
+            KeyCode::C, ModifierFlag::EXTRA1,
             {{ KEYCODE_TMUX }}, KeyCode::C
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::R, ModifierFlag::EXTRA1, 
+            KeyCode::R, ModifierFlag::EXTRA1,
             {{ KEYCODE_TMUX }}, KeyCode::N
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::W, ModifierFlag::EXTRA1, 
+            KeyCode::W, ModifierFlag::EXTRA1,
             {{ KEYCODE_TMUX }}, KeyCode::P
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::A, ModifierFlag::EXTRA1, 
+            KeyCode::A, ModifierFlag::EXTRA1,
             {{ KEYCODE_TMUX }}, KeyCode::COMMA
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::KEY_1, ModifierFlag::EXTRA1, 
+            KeyCode::KEY_1, ModifierFlag::EXTRA1,
             {{ KEYCODE_TMUX }}, KeyCode::KEY_0
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::S, ModifierFlag::EXTRA1, 
+            KeyCode::S, ModifierFlag::EXTRA1,
             {{ KEYCODE_TMUX }}, KeyCode::O
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::F, ModifierFlag::EXTRA1, 
+            KeyCode::F, ModifierFlag::EXTRA1,
             {{ KEYCODE_TMUX }}, KeyCode::O
         </autogen>
     </item>
     <replacementdef>
         <replacementname>KEYCODE_VIM_WINDOW</replacementname>
-	<!-- FIXME: ctrl-a means increment number.. -->
-        <replacementvalue>KeyCode::A, VK_CONTROL, KeyCode::W, VK_CONTROL</replacementvalue>
+        <replacementvalue>KeyCode::W, ModifierFlag::CONTROL_L</replacementvalue>
     </replacementdef>
     <item>
         <name>vim window and tab</name>
@@ -100,32 +99,32 @@
         <only>TERMINAL</only>
         <autogen>
             __KeyToKey__
-            KeyCode::J, ModifierFlag::EXTRA1, 
+            KeyCode::J, ModifierFlag::EXTRA1,
             {{ KEYCODE_VIM_WINDOW }}, KeyCode::J
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::K, ModifierFlag::EXTRA1, 
+            KeyCode::K, ModifierFlag::EXTRA1,
             {{ KEYCODE_VIM_WINDOW }}, KeyCode::K
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::H, ModifierFlag::EXTRA1, 
+            KeyCode::H, ModifierFlag::EXTRA1,
             {{ KEYCODE_VIM_WINDOW }}, KeyCode::H
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::L, ModifierFlag::EXTRA1, 
+            KeyCode::L, ModifierFlag::EXTRA1,
             {{ KEYCODE_VIM_WINDOW }}, KeyCode::L
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::N, ModifierFlag::EXTRA1, 
+            KeyCode::N, ModifierFlag::EXTRA1,
             KeyCode::G, KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::M, ModifierFlag::EXTRA1, 
+            KeyCode::M, ModifierFlag::EXTRA1,
             KeyCode::G, KeyCode::T
         </autogen>
     </item>

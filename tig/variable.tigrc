@@ -15,3 +15,6 @@ set diff-context = 6
 
 # ignore case in searches
 set ignore-case = yes
+
+# 行の折り返しを行う
+set wrap-lines = yes

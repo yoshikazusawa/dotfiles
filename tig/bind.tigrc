@@ -7,6 +7,10 @@ bind generic G none
 # dateの表示はデフォルト固定でview単位でDを使えるようにする
 bind generic D none
 
+bind generic g move-first-line
+bind generic G move-last-line
+
+bind generic ^g !git gc
 
 ########
 # main view
@@ -14,8 +18,6 @@ bind generic D none
 
 bind main R !git pull --rebase
 bind main V !?git revert %(commit)
-bind main g move-first-line
-bind main G move-last-line
 bind main C !?git checkout %(commit)
 bind main z toggle-rev-graph
 
@@ -38,5 +40,4 @@ bind status a !git add .
 
 bind branch n !git checkout -b %(prompt) %(branch)
 bind branch D !?git branch -D %(branch)
-
 

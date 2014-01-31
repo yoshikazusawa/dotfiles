@@ -16,10 +16,19 @@ bind generic ^g !git gc
 # main view
 ########
 
-bind main R !git pull --rebase
+bind main ^r !git pull --rebase
 bind main V !?git revert %(commit)
 bind main C !?git checkout %(commit)
-bind main z toggle-rev-graph
+
+########
+# branch view
+########
+
+bind branch n !git checkout -b %(prompt) %(branch)
+bind branch D !?git branch -D %(branch)
+bind branch d !?git branch -d %(branch)
+bind branch P !?git push origin %(branch)
+
 
 ########
 # diff view
@@ -33,11 +42,4 @@ bind diff G move-last-line
 
 bind status a !git add .
 
-
-########
-# branch view
-########
-
-bind branch n !git checkout -b %(prompt) %(branch)
-bind branch D !?git branch -D %(branch)
 

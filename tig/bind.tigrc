@@ -7,6 +7,7 @@ bind generic G none
 # dateの表示はデフォルト固定でview単位でDを使えるようにする
 bind generic D none
 
+# vim-likeな先頭行/末尾行の移動
 bind generic g move-first-line
 bind generic G move-last-line
 
@@ -33,8 +34,6 @@ bind branch P !?git push origin %(branch)
 ########
 # diff view
 ########
-bind diff g move-first-line
-bind diff G move-last-line
 
 ########
 # status view

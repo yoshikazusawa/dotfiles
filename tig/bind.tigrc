@@ -2,6 +2,19 @@
 # general
 ########
 
+# リポジトリのGitHubを表示
+bind generic ^ !@hub browse
+# issuesを表示
+bind generic - !@hub browse -- issues
+# commitをGitHubで表示
+bind generic ~ !@hub browse -- commit/%(commit)
+# ci-statusを確認
+bind generic = !hub ci-status %(commit)
+# compare
+bind branch [ !@hub compare %(branch)
+# pull-request this branch
+bind main { !hub pull-request
+
 # git gcは走らせないようにする
 bind generic G none
 # dateの表示はデフォルト固定でview単位でDを使えるようにする

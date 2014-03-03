@@ -46,3 +46,4 @@ install tree
 install wget
 install xz
 install zsh
+cleanup

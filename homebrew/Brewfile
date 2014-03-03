@@ -1,5 +1,10 @@
 update
 
+tap phinze/homebrew-cask || true
+tap homebrew/binary || true
+
+# packages
+
 install ack
 install apple-gcc42
 install autoconf
@@ -46,4 +51,9 @@ install tree
 install wget
 install xz
 install zsh
+
+# casks
+
+install brew-cask
+
 cleanup

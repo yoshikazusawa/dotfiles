@@ -24,11 +24,12 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/dotfiles/zsh/zaw/zaw.zsh
 
 # Customize to your needs...
-export PATH=~/.rbenv/shims:~/bin:~/nvm/v0.8.25/bin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin
-source ~/nvm/nvm.sh
-nvm use v0.8.25
+export PATH=~/.rbenv/shims:~/bin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin
 
 source ~/perl5/perlbrew/etc/bashrc
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+nodebrew use default
 
 alias ki='tree -CAF'
 alias pb='perlbrew'

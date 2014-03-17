@@ -74,6 +74,24 @@ setopt SHARE_HISTORY
 setopt HIST_REDUCE_BLANKS
 setopt HIST_IGNORE_SPACE
 
+
+# ディレクトリまわり
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+
+# プロンプトに色をつける
+setopt prompt_subst
+PROMPT="%{${fg[blue]}%}[%n@%m:%~] %(!.#.$) %{${reset_color}%}"
+
+
+# 補完候補が複数ある時に、一覧表示
+# 補完キー（Tab, Ctrl+I) を連打するだけで順に補完候補を自動で補完
+setopt auto_list
+
+# ==== Key ====
+bindkey -v
+
 ## never ever beep ever
 setopt NO_BEEP
 
@@ -81,3 +99,7 @@ setopt NO_BEEP
 setopt correct
 setopt list_packed
 setopt extendedglob
+
+autoload -U colors
+colors
+

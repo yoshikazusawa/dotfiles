@@ -103,3 +103,33 @@ setopt extendedglob
 autoload -U colors
 colors
 
+
+# zsh functions
+
+# ==== fast change top directory ====
+rationalise-dot() {
+if [[ $LBUFFER = *.. ]]; then
+    LBUFFER+=/..
+else
+    LBUFFER+=.
+fi
+}
+
+zle -N rationalise-dot
+
+bindkey . rationalise-dot
+
+function history-all { history -E 1 }
+function hisall { history-all }
+
+function alc {
+    if [ $# != 0 ]; then
+        w3m -o confirm_qq=false "http://eow.alc.co.jp/$1/UTF-8/"
+    fi
+}
+
+function gvdiff() {
+    git diff --no-ext-diff -w "$@" | vim -R -
+}
+
+

@@ -11,6 +11,7 @@ install autoconf
 install automake
 install boost
 install ctags
+install cmigemo
 install freetype
 install gd
 install gdbm

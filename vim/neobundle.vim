@@ -1,3 +1,4 @@
+" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache'
@@ -18,7 +19,6 @@ NeoBundle 'mattn/webapi-vim'
 NeoBundle 'ref.vim'
 NeoBundle 'surround.vim'
 NeoBundle 'taglist.vim'
-NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'vim-jp/vimdoc-ja'

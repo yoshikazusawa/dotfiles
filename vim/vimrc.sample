@@ -1,0 +1,25 @@
+set nocompatible               " Be iMproved
+filetype off                   " Required!
+
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundle 'Shougo/neobundle.vim'
+
+source ~/dotfiles/vim/neobundle.vim
+
+ " ...
+
+filetype plugin indent on     " Required!
+NeoBundleCheck
+
+syntax on
+
+" 分割した設定ファイルをすべて読み込む
+set runtimepath+=~/dotfiles/vim/
+runtime! userautoload/*.vim
+

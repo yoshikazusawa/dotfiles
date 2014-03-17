@@ -13,9 +13,6 @@ set nomodeline
 " すべてのモードでマウスが有効
 set mouse=a
 
-
-set number
-
 " 行番号を表示する。
 set number
 
@@ -29,5 +26,8 @@ helptags $HOME/.vim/bundle/vimdoc-ja/doc
 set helplang=ja,en
 set statusline=%F%m%r%h%w\%=[TYPE=%Y]\[FORMAT=%{&ff}]\[ENC=%{&fileencoding}]\[LOW=%l/%L]
 
-set nu
 set hlsearch
+
+" map
+nnoremap j gj
+nnoremap k gk

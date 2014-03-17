@@ -23,7 +23,18 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/dotfiles/zsh/zaw/zaw.zsh
 
+
 # Customize to your needs...
+
+# terminal enviromnents
+
+export locale=ja_JP.UTF-8
+export LANG=ja_JP.UTF-8
+export TERM="xterm-256color"
+export GIT_EDITOR=vim
+
+
+
 export PATH=~/.rbenv/shims:~/bin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin
 
 source ~/perl5/perlbrew/etc/bashrc

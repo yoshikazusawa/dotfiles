@@ -34,7 +34,7 @@ export GIT_EDITOR=vim
 
 
 
-export PATH=~/.rbenv/shims:~/bin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin
+export PATH=~/.rbenv/shims:~/bin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:$PATH
 
 source ~/perl5/perlbrew/etc/bashrc
 

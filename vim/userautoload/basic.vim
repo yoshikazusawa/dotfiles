@@ -7,6 +7,9 @@ set cmdheight=1
 " Insertモード、ReplaceモードまたはVisualモードで最終行にメッセージを表示する
 set showmode
 
+set title        "ウィンドウのタイトルを書き換える
+set cursorline   "カーソル行を強調表示
+
 "モードラインの無効化
 set nomodeline
 

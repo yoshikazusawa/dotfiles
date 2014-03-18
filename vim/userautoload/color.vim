@@ -6,3 +6,5 @@ let g:solarized_termtrans=4
 
 let g:Powerline_theme='solarized256'
 let g:Powerline_colorscheme='solarized256'
+
+hi cursorline   term=reverse cterm=none ctermbg=235

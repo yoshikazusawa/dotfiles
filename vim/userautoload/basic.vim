@@ -19,6 +19,8 @@ set smartindent
 
 " すべてのモードでマウスが有効
 set mouse=a
+"マウス関連"
+set ttymouse=xterm2
 
 " 行番号を表示する。
 set number

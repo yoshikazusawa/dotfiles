@@ -13,6 +13,10 @@ set cursorline   "カーソル行を強調表示
 "モードラインの無効化
 set nomodeline
 
+" indent
+set autoindent
+set smartindent
+
 " すべてのモードでマウスが有効
 set mouse=a
 

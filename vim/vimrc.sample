@@ -7,9 +7,6 @@ endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
 
-" Let NeoBundle manage NeoBundle
-NeoBundle 'Shougo/neobundle.vim'
-
 source ~/dotfiles/vim/neobundle.vim
 
  " ...

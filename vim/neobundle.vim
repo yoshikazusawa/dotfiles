@@ -1,4 +1,8 @@
+" Let NeoBundle manage NeoBundle
+NeoBundle 'Shougo/neobundle.vim'
+
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
+
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache'

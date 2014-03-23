@@ -33,6 +33,7 @@ install jsonpp
 install libevent
 install libpng
 install libyaml
+install lua
 install lv
 install maven
 install ncurses
@@ -49,6 +50,7 @@ install the_silver_searcher
 install tig
 install tmux
 install tree
+install vim --override-system-vi --with-lua --with-ruby --with-perl
 install wget
 install xz
 install zsh

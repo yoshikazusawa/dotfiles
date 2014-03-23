@@ -26,3 +26,5 @@ NeoBundle 'taglist.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'vim-jp/vimdoc-ja'
+NeoBundle 'h1mesuke/unite-outline'
+

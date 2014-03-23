@@ -42,6 +42,7 @@ bind branch n !git checkout -b %(prompt) %(branch)
 bind branch D !?git branch -D %(branch)
 bind branch d !?git branch -d %(branch)
 bind branch P !?git push origin %(branch)
+bind branch T !git checkout -t %(branch)
 
 
 ########

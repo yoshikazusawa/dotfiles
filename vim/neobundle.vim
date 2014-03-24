@@ -27,4 +27,6 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'vim-jp/vimdoc-ja'
 NeoBundle 'h1mesuke/unite-outline'
+NeoBundle 'mru.vim'
+NeoBundle 'vcscommand.vim'
 

@@ -31,4 +31,6 @@ NeoBundle 'mru.vim'
 NeoBundle 'vcscommand.vim'
 
 NeoBundle 'Align'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 

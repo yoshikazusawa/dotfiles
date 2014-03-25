@@ -1,3 +1,7 @@
+set encoding=utf-8
+set fileencoding=utf-8
+set ambiwidth=double
+
 function! ReOpenUTF8()
     echo ":e ++enc=utf8<CR>"
 endfunction

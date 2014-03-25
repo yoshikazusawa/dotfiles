@@ -1,3 +1,8 @@
+"Vi互換モードをオフにする
+set notimeout          " マッピングについてタイムアウトしない
+set ttimeout           " 端末のキーコードについてタイムアウトする
+set timeoutlen=100     " 100 ミリ秒後にタイムアウトする"
+
 " ステータス行を常に表示する
 set laststatus=2
 

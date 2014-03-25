@@ -30,3 +30,5 @@ NeoBundle 'h1mesuke/unite-outline'
 NeoBundle 'mru.vim'
 NeoBundle 'vcscommand.vim'
 
+NeoBundle 'Align'
+

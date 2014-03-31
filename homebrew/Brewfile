@@ -12,6 +12,7 @@ install automake
 install boost
 install ctags
 install cmigemo
+install elasticsearch
 install freetype
 install gd
 install gdbm
@@ -29,6 +30,7 @@ install hwloc
 install iperf
 install jenkins
 install jpeg
+install jq
 install jsonpp
 install libevent
 install libpng

@@ -5,7 +5,7 @@ NeoBundle 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplcache'
+"NeoBundle 'Shougo/neocomplcache'
 
 NeoBundle "kien/ctrlp.vim"
 NeoBundle "sudar/vim-arduino-syntax"
@@ -33,4 +33,6 @@ NeoBundle 'vcscommand.vim'
 NeoBundle 'Align'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'scrooloose/syntastic'
+
 

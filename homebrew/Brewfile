@@ -60,5 +60,10 @@ install zsh
 # casks
 
 install brew-cask
+cask install google-earth
+cask install eagle
+cask install coolterm
+cask install licecap
+cask install limechat
 
 cleanup

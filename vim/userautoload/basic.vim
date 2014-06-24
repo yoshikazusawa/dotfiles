@@ -45,3 +45,5 @@ set hlsearch
 " map
 nnoremap j gj
 nnoremap k gk
+nnoremap gs :vertical wincmd f<CR>
+

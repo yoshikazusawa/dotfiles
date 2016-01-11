@@ -37,9 +37,9 @@ export GIT_EDITOR=vim
 export PATH=~/.rbenv/shims:~/bin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:$PATH
 
 source ~/perl5/perlbrew/etc/bashrc
+eval "$(ndenv init -)"
+export PATH=$HOME/.ndenv/bin:$PATH
 
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-nodebrew use default
 
 alias ki='tree -CAF'
 alias pb='perlbrew'

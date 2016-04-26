@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <root>
+    <appdef>
+        <appname>CHROME</appname>
+        <equal>com.google.Chrome</equal>
+    </appdef>
+
     <item>
         <name>Double Command_R to tmux prefix</name>
         <identifier>private.term.tmux.prefixkey</identifier>
@@ -17,7 +22,6 @@
     <item>
         <name>ModifierFlag::EXTRA1+EDSF to Up/Down/Left/Right</name>
         <identifier>private.term.diamond_cursor.extra_edsf</identifier>
-        <only>TERMINAL</only>
         <autogen>__KeyToKey__ ModifierFlag::COMMAND_R, KeyCode::VK_MODIFIER_EXTRA1</autogen>
         <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA1, KeyCode::CURSOR_UP</autogen>
         <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA1, KeyCode::CURSOR_DOWN</autogen>
@@ -38,7 +42,6 @@
         <name>KANA to ModifierFlag::Extra2</name>
         <appendix>(+ When you type KANA only, send RETURN)</appendix>
         <identifier>private.term.jis_kana_to_modifierflag_extra2</identifier>
-        <only>TERMINAL</only>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::JIS_KANA, KeyCode::VK_MODIFIER_EXTRA2,
@@ -131,26 +134,16 @@
     <item>
         <name>chrome tab moves</name>
         <identifier>private.chrome.tab.move</identifier>
-        <only>GOOGLE_CHROME</only>
+        <only>CHROME</only>
         <autogen>
             __KeyToKey__
-            KeyCode::S, ModifierFlag::EXTRA1, 
-            KeyCode::TAB, ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
+            KeyCode::W, ModifierFlag::EXTRA1, 
+            KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::F, ModifierFlag::EXTRA1, 
-            KeyCode::TAB, ModifierFlag::CONTROL_L
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::E, ModifierFlag::EXTRA1, 
-            KeyCode::CURSOR_UP
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::D, ModifierFlag::EXTRA1, 
-            KeyCode::CURSOR_DOWN
+            KeyCode::R, ModifierFlag::EXTRA1, 
+            KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
         </autogen>
     </item>
 

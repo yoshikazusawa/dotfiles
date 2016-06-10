@@ -8,7 +8,7 @@ alias gdc='git diff --cached'
 alias gfa='git fetch --all'
 alias perldoc='perldoc -t'
 alias pb='perlbrew'
-alias hg='history -E 4 | grep '
+alias hg='history | grep '
 alias scr='screen -r'
 alias -g G=' | grep '
 alias -g GV=' | grep -v '
@@ -20,4 +20,6 @@ alias ack="ack -i \--pager='less \-R'"
 alias ackjs='ack -t=js'
 alias ag="ag -C 1 --pager='less \-R'"
 alias findname='find . -name'
+alias curl='curl --silent '
+alias curlget='curl -O '
 

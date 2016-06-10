@@ -36,10 +36,14 @@ export GIT_EDITOR=vim
 
 export PATH=~/bin:$PATH
 
-source ~/perl5/perlbrew/etc/bashrc
-eval "$(ndenv init -)"
-export PATH=$HOME/.ndenv/bin:$PATH
+export PATH=$HOME/.plenv/bin:$PATH
+eval "$(plenv init -)"
 
+export PATH=$HOME/.ndenv/bin:$PATH
+eval "$(ndenv init -)"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 alias ki='tree -CAF'
 alias pb='perlbrew'
@@ -56,7 +60,6 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias gst='git status'
 alias gdc='git diff --cached'
-alias hg='history -E 2 | grep '
 alias -g G=' | grep '
 alias -g GV=' | grep -v '
 alias -g L=' | lv '

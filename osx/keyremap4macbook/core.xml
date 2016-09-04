@@ -6,15 +6,6 @@
     </appdef>
 
     <item>
-        <name>Double Command_R to tmux prefix</name>
-        <identifier>private.term.tmux.prefixkey</identifier>
-        <only>TERMINAL</only>
-        <autogen>
-            --DoublePressModifier--
-            KeyCode::COMMAND_R, KeyCode::COMMAND_R,
-            KeyCode::B, ModifierFlag::CONTROL_L</autogen>
-    </item>
-    <item>
         <name>Control_L+Space to KANA/EISUU (toggle)</name>
         <identifier>private.jis_ctrlspace2toggle_eisuu_kana</identifier>
         <autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::CONTROL_L, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
@@ -48,6 +39,27 @@
             KeyCode::RETURN
         </autogen>
     </item>
+    <item>
+        <name>Command_R to ModifierFlag::EXTRA3</name>
+        <appendix>(+ When you type COMMAND_R only, send DELETE)</appendix>
+        <identifier>private.modifier.jis_command_r_to_modifierflag_extra3</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::COMMAND_R, KeyCode::VK_MODIFIER_EXTRA3,
+            KeyCode::DELETE
+        </autogen>
+    </item>
+
+    <item>
+        <name>place symbol</name>
+        <identifier>private.keymap.symbol</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::M, ModifierFlag::EXTRA3,
+            KeyCode::JIS_UNDERSCORE
+        </autogen>
+    </item>
+
     <replacementdef>
         <replacementname>KEYCODE_TMUX</replacementname>
         <replacementvalue>KeyCode::B, VK_CONTROL</replacementvalue>

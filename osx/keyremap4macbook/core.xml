@@ -39,6 +39,7 @@
             KeyCode::RETURN
         </autogen>
     </item>
+
     <item>
         <name>Command_R to ModifierFlag::EXTRA3</name>
         <appendix>(+ When you type COMMAND_R only, send DELETE)</appendix>
@@ -48,6 +49,17 @@
             KeyCode::COMMAND_R, KeyCode::VK_MODIFIER_EXTRA3,
             KeyCode::DELETE
         </autogen>
+    </item>
+
+    <item>
+      <name>Command_L to Command_L</name>
+      <appendix>(+ When you type Command_L only, send EISUU)</appendix>
+      <identifier>remap.commandL2commandL_eisuu</identifier>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::COMMAND_L, KeyCode::COMMAND_L,
+        KeyCode::JIS_EISUU
+      </autogen>
     </item>
 
     <item>

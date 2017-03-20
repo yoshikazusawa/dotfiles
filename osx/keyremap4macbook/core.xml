@@ -39,15 +39,26 @@
             KeyCode::RETURN
         </autogen>
     </item>
+    <item>
+        <name>EISUU to F15</name>
+        <identifier>private.modifier.jis_eisuu_to_f15</identifier>
+        <autogen>
+            __KeyToKey__, KeyCode::JIS_EISUU, KeyCode::F15
+        </autogen>
+    </item>
 
     <item>
-        <name>Command_R to ModifierFlag::EXTRA3</name>
-        <appendix>(+ When you type COMMAND_R only, send DELETE)</appendix>
-        <identifier>private.modifier.jis_command_r_to_modifierflag_extra3</identifier>
+        <name>KANA to F16</name>
+        <identifier>private.modifier.jis_kana_to_f16</identifier>
         <autogen>
-            __KeyOverlaidModifier__
-            KeyCode::COMMAND_R, KeyCode::VK_MODIFIER_EXTRA3,
-            KeyCode::DELETE
+            __KeyToKey__, KeyCode::JIS_KANA, KeyCode::F16
+        </autogen>
+    </item>
+        <item>
+        <name>Command_R to F17</name>
+        <identifier>private.modifier.jis_command_r_to_f17</identifier>
+        <autogen>
+            __KeyToKey__, KeyCode::COMMAND_R, KeyCode::F17
         </autogen>
     </item>
 

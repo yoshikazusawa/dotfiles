@@ -94,6 +94,16 @@ nmap[kana] = {
 nmap[cmd_r] = {
   default = { {}, "delete" },
   common = {
+    ["w"] = { {"shift"}, "2" }, -- send '"'
+    ["q"] = { {"shift"}, "7" }, -- send "'"
+    ["p"] = { {"shift"}, "5" }, -- send '%'
+    ["a"] = { {"shift"}, "6" }, -- send "&"
+    ["s"] = { {""}, "/" }, -- send "/"
+    ["d"] = { {"shift"}, "4" }, -- send "$"
+    ["h"] = { {"shift"}, "3" }, -- send "#"
+    ["t"] = { {"shift"}, "^" }, -- send "~"
+    ["b"] = { {"shift"}, "@" }, -- send "`"
+    ["e"] = { {"shift"}, "-" }, -- send "="
   },
   app = {
   },

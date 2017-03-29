@@ -94,16 +94,18 @@ nmap[kana] = {
 nmap[cmd_r] = {
   default = { {}, "delete" },
   common = {
-    ["w"] = { {"shift"}, "2" }, -- send '"'
-    ["q"] = { {"shift"}, "7" }, -- send "'"
+    ["w"] = { {"shift"}, "2" }, -- send '"' - w quote
+    ["q"] = { {"shift"}, "7" }, -- send "'" - quote
     ["p"] = { {"shift"}, "5" }, -- send '%'
     ["a"] = { {"shift"}, "6" }, -- send "&"
     ["s"] = { {""}, "/" }, -- send "/"
-    ["d"] = { {"shift"}, "4" }, -- send "$"
-    ["h"] = { {"shift"}, "3" }, -- send "#"
-    ["t"] = { {"shift"}, "^" }, -- send "~"
-    ["b"] = { {"shift"}, "@" }, -- send "`"
+    ["d"] = { {"shift"}, "4" }, -- send "$" - dollar
+    ["h"] = { {"shift"}, "3" }, -- send "#" - hash
+    ["t"] = { {"shift"}, "^" }, -- send "~" - tilde
     ["e"] = { {"shift"}, "-" }, -- send "="
+    ["u"] = { {""}, "_" }, -- send "_" - underscore
+    ["m"] = { {""}, "-" }, -- send "-" - minus
+    ["g"] = { {"shift"}, "@" }, -- send "`" - grave accent
   },
   app = {
   },
